@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invitation_Project", "Invitation_Project\Invitation_Project.csproj", "{ED199C8F-63C0-4CE5-9930-2526E214B4E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JQueryProject", "JQueryProject\JQueryProject.csproj", "{EB15FC58-B951-4340-A2E4-E52350B9F144}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED199C8F-63C0-4CE5-9930-2526E214B4E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED199C8F-63C0-4CE5-9930-2526E214B4E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED199C8F-63C0-4CE5-9930-2526E214B4E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED199C8F-63C0-4CE5-9930-2526E214B4E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB15FC58-B951-4340-A2E4-E52350B9F144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB15FC58-B951-4340-A2E4-E52350B9F144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB15FC58-B951-4340-A2E4-E52350B9F144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB15FC58-B951-4340-A2E4-E52350B9F144}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30E838FF-5681-4A1C-8445-339D28174A8B}
+	EndGlobalSection
+EndGlobal

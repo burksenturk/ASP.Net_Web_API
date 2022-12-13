@@ -1,0 +1,20 @@
+1) Sayfaların class olarak tanımlanması yapıldı.
+2) Proportyler tanımlandı. Sitedeki tüm alanlar için ayrı ayrı yapıldı.
+3) Nuget paketler yüklendi.
+4) Key Attribute tanımlandı.
+5) DbContext işlemler
+6) Katmanlar arası referans işlemi yaptık.
+7) Migration işlemi
+8) İnterface lerin oluşturulması (Generic Interface)
+9) Generic Repository
+10) Entity Framework Dal Class
+11) Generic Service
+12) Projede Template Kullanma
+13) Partial View
+14) View Component
+15) Admin Panel Düzenlemesi
+16) CRUD İşlemler
+17) Fluent Validation
+18) MVC Area
+19) Register İşlemleri
+20) Login İşlemleri

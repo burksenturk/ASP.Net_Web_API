@@ -1,0 +1,25 @@
+﻿@model EntityLayer.Concrete.Skill
+
+@{
+    ViewData["Title"] = "AddSkill";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br/>
+<div class="card-header border-0">
+    <h3 class="mb-0">Yetenek Ekleme Sayfası</h3>
+</div>
+<form class="form-group" method="post">
+    @*<label>Yetenek Başlığı</label>*@
+    @Html.Label("Yetenek Başlığı")
+    @*<input type="text" name="Title" class="form-control">*@
+    @Html.TextBoxFor(x => x.Title,new{@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Title,"",new{@style="color:red"})
+    <br/>
+    @Html.Label("Değer")
+    @*<input type="text" name="Value" class="form-control">*@
+    @Html.TextBoxFor(x => x.Value,new{@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Value,"",new{@style="color:red"})
+  
+    <br/>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>

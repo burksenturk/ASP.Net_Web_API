@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    <h2>Çok özel bir mezuniyet partisi olacak</h2>
+    <h2>Sen de davetlisin</h2>
+
+    @Html.ActionLink("Geliyor musun ?", "InvitationForm", null, new {@class="btn btn-primary"})  @*Sayfada tıklandıktan sonra invitationform'a gidilecek*@
+
+</div>

@@ -1,0 +1,12 @@
+﻿@model  IEnumerable<Invitation_Project.Models.InvitationModel>
+@*Databaseden IEnumerable olarak satırlar key e göre alınacaktır, Default controlden liste olarak gönderiliyor*@
+
+<p>
+    @foreach (var i in Model)
+    {
+        @*katılacak kişilerin isimleri liste olarak gösterilecek*@
+        <label class="label label-success">@i.Ad</label>
+    }
+</p>
+
+

@@ -1,0 +1,104 @@
+MVC yeni proje açılacak solutionda add new project diyerek BusinessLayer + DataAccessLayer + EntityLayer
+EntityLayer içine 
+new folder Concrete
+İÇİNE :
+*************BÜTÜN İNTERNALLAR PUBLİC YAPILACAK*************************
+new class Feature
+new class About
+new class Service 
+new class Skill 
+new class Portfolio 
+new class Experience
+new class Contact
+new class Message
+new class SocialMedia
+
+DataAccessLAyer içine new folder Concrete içine new folder Context 
+
+Sağ tıklayıp add deyip project referans diyoruz.
+Core_Proje de 3 üde
+Busines Entity ve dataaccess
+Dataaccess sadece entity
+
+View Other Windows Package Manager Console
+add-migration (migration adı) yaz 
+add-migration mig1 yazdık ve Default project ten Dataaccess layer seçmemiz gerekiyor
+
+DataAccessLayer içine new folder abstract
+içine 
+new interface IAboutDal
+new interface IContactDal
+new interface IExperienceDal
+new interface IFeatureDal
+new interface IMessageDal
+new interface IPortfolioDal
+new interface IServiceDal
+new interface ISkillDal
+new interface ISocialMediaDal
+new interface ITestimonialDal
+new interface IGenericDal
+
+IGenericDal da hepsi için ortak bir şablon hazırlayıp hepsine implement ettik.
+
+DataAccessLayer içine new folder Repository içine new class GenericRepository
++ new folder EntityFramework
+içine new class EfAboutDal
+içine new class EfContactDal
+içine new class EfExperienceDal
+içine new class EfFeatureDal
+içine new class EfMessageDal
+içine new class EfPortfolioDal
+içine new class EfServiceDal
+içine new class EfSkillDal
+içine new class EfSocialMediaDal
+içine new class EfTestimonialDal
+
+
+BusinessLAyer içine  
+new folder Abstract;
+new interface IGenericService
+new interface IAboutService
+new interface IContactService
+new interface IExperienceService
+new interface IFeatureService
+new interface IMessageService
+new interface IPortfolioService
+new interface IServiceService
+new interface ISkillService
+new interface ISocialService
+new interface ITestimonialService
+
+new folder Concrete;
+new class AboutManager
+new class ContactManager
+new class ExperienceManager
+new class FeatureManager
+new class MessageManager
+new class PortfolioManager
+new class ServiceManager
+new class SkillManager
+new class SocialManager
+new class TestimonialManager
+
+new folder ValidationRules;
+
+
+Core_Proje içindeki Controllers içine new controller DefaulController
+ındex sağ tıkla add view Index
+içine public PartialViewResult HeaderPartial()
+        {
+            return PartialView();
+        } 
+yazıyoruz ve  HeaderPartial ye sağ tık add wiew deyip partial seçiyoruz.
+Bu işlemi NavbarPartial içinde yapıyoruz. İçine Header kısmını atıyoruz.
+
+Core_Projeye sağ tık new folder ViewComponents
+içine new folder Feature içine new class FeatureList : VievComponent yapıyoruz
+içine new folder About içine new class AboutList :ViewComponent yapıyoruz.
+
+View-> Shared içine new folder Components içine 
+new folder FeatureList içine add razor view (Partial seçili) Default
+new folder AboutList içine add razor view (Partial seçili) Default 
+
+Aynı işlemleri Service için yapıyoruz.
+Ben yaptığım projelerde özgün tasarım sunarım, yapılan projelerin son versiyon modellemelere uygun olmasına dikkat ederim.
